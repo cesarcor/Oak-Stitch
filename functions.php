@@ -63,20 +63,4 @@ function oak_stitch_setup()
 }
 add_action('after_setup_theme', 'oak_stitch_setup');
 
-/**
- * Displays the site header.
- *
- * @since 1.0.0
- * 
- */
 
- require_once get_template_directory(  ). '/inc/classes/class-oak-stitch-header.php';
- Oak_Stitch_Header::get_instance();
-
-
-/**
- * * Include customizer settings for the theme.
- * 
- * * @since 1.0.0
- */
- require_once get_template_directory() . '/inc/customizer/index.php';
