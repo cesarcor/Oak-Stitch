@@ -1,6 +1,5 @@
 <?php
-function oak_stitch_enqueue_assets()
-{
+function oak_stitch_enqueue_assets(){
     $theme_dir = get_template_directory();
     $theme_uri = get_template_directory_uri();
     $dev_server = 'http://localhost:5173';
@@ -55,12 +54,10 @@ add_action('wp_enqueue_scripts', 'oak_stitch_enqueue_assets');
  * Register theme support for various WordPress features.
  * 
  */
-function oak_stitch_setup()
-{
+function oak_stitch_setup(){
     register_nav_menus([
         'primary' => __('Primary Menu', 'oak-stitch')
     ]);
 }
 add_action('after_setup_theme', 'oak_stitch_setup');
-
 
