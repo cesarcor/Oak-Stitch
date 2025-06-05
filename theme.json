@@ -1,8 +1,144 @@
 {
-    "version": 2,
-    "settings":{
-        "custom":{
-            "headerLayouts" : ["default", "centered", "woocommerce"]
-        }
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
     }
-}
+  ],
+  "styles": {
+    "blocks": {
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--inter)",
+          "fontWeight": "400"
+        }
+      },
+      "core/paragraph": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--inter)",
+          "fontWeight": "400"
+        }
+      }
+    }
+  },
+    "settings": {
+      "color": {
+        "palette": [
+          {
+            "name": "Primary",
+            "slug": "primary",
+            "color": "#d96e8b"
+          },
+          {
+            "name": "Base",
+            "slug": "base",
+            "color": "#ffffff"
+          },
+          {
+            "name": "Neutral",
+            "slug": "neutral",
+            "color": "#f4f4f4"
+          },
+          {
+            "name": "Dark",
+            "slug": "dark",
+            "color": "#1c1c1e"
+          },
+          {
+            "name": "Secondary",
+            "slug": "secondary",
+            "color": "#45604b"
+          },
+          {
+            "name": "Tertiary",
+            "slug": "tertiary",
+            "color": "#f8e7e9"
+          }
+        ],
+        "custom": true
+      },
+      "spacing": {
+        "padding": true,
+        "margin": true,
+        "units": [
+          "px",
+          "em",
+          "rem",
+          "%"
+        ]
+      },
+      "border": {
+        "width": true,
+        "color": true,
+        "radius": true
+      },
+      "layout": {},
+      "typography": {
+        "customFontSize": true,
+        "fluid": true,
+        "fontWeight": true,
+        "fontFamilies": [
+          {
+            "name": "Manrope",
+            "slug": "manrope",
+            "fontFamily": "\"Manrope\", sans-serif",
+            "fontFace": [
+              {
+                "fontFamily": "Manrope",
+                "fontStyle": "normal",
+                "fontWeight": "700 800",
+                "src": [
+                  "file:./assets/fonts/Manrope/Manrope-VariableFont.woff2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Inter",
+            "slug": "inter",
+            "fontFamily": "\"Inter\", sans-serif",
+            "fontFace": [
+              {
+                "fontFamily": "Inter",
+                "fontStyle": "normal",
+                "fontWeight": "300 500 600",
+                "src": [
+                  "file:./assets/fonts/Inter/Inter-VariableFont.woff2"
+                ]
+              }
+            ]
+          }
+        ],
+        "fontSizes": [
+          {
+            "name": "Small",
+            "slug": "small",
+            "size": "0.875rem"
+          },
+          {
+            "name": "Base",
+            "slug": "base",
+            "size": "1rem"
+          },
+          {
+            "name": "Large",
+            "slug": "large",
+            "size": "1.25rem"
+          },
+          {
+            "name": "XL",
+            "slug": "xl",
+            "size": "2rem"
+          }
+        ]
+      }
+    }
+  }
