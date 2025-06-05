@@ -1,3 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.alignfull {
+	width: 100vw;
+	margin: 0 auto;
+}
