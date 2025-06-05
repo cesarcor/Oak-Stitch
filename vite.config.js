@@ -25,13 +25,4 @@ export default defineConfig({
 	css: {
 		postcss: './postcss.config.js',
 	},
-	server: {
-		// proxy: {
-		// 	'/': {
-		// 		target: 'http://oak-stitch.local',
-		// 		changeOrigin: true,
-		// 		secure: false,
-		// 	},
-		// },
-	},
 });
